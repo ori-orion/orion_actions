@@ -1,0 +1,8 @@
+# Return whether the object you query is in sight. This includes people.
+# Define the goal
+string object_name
+---
+# Define the result
+bool is_present
+---
+# Define a feedback message

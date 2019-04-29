@@ -1,0 +1,7 @@
+# Check which drinks are available at the bar
+# Define the goal
+---
+# Define the result
+string[] drinks
+---
+# Define a feedback message

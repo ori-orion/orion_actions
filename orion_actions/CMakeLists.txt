@@ -50,6 +50,13 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
+add_message_files(
+  DIRECTORY
+  msg
+  FILES
+  ObjectLocation.msg
+)
+
 ## Generate messages in the 'msg' folder
 # add_message_files(
 #   FILES
@@ -64,10 +71,16 @@ find_package(catkin REQUIRED COMPONENTS
 #   Service2.srv
 # )
 
-add_action_files(DIRECTORY 
-		action 
-		FILES 
-		PickUpObject.action
+add_action_files(
+  DIRECTORY 
+  action 
+  FILES
+  CheckForBarDrinks.action
+  CheckForObject.action
+  GetFaceLocation.action
+  GetPointedObject.action
+  IsDoorOpen.action
+  PickUpObject.action
 )
 
 ## Generate actions in the 'action' folder

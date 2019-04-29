@@ -1,0 +1,7 @@
+# Check if the door in front is open or closed. Needed for the default start signal.
+# Define the goal
+---
+# Define the result
+bool is_open
+---
+# Define a feedback message

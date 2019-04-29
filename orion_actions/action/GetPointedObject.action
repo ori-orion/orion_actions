@@ -1,0 +1,7 @@
+# Run gesture recognition and return name of object if known else use point cloud.
+# Define the goal
+---
+# Define the result
+string object_name
+---
+# Define a feedback message
