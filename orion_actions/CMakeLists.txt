@@ -13,6 +13,8 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  genmsg
+  actionlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -62,6 +64,12 @@ find_package(catkin REQUIRED COMPONENTS
 #   Service2.srv
 # )
 
+add_action_files(DIRECTORY 
+		action 
+		FILES 
+		PickUpObject.action
+)
+
 ## Generate actions in the 'action' folder
 # add_action_files(
 #   FILES
@@ -95,6 +103,8 @@ find_package(catkin REQUIRED COMPONENTS
 #   cfg/DynReconf2.cfg
 # )
 
+catkin_python_setup()
+
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -105,6 +115,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
+CATKIN_DEPENDS roscpp rospy std_msgs actionlib_msgs
 #  INCLUDE_DIRS include
 #  LIBRARIES orion_actions
 #  CATKIN_DEPENDS actionlib_msgs geometry_msgs roscpp rospy std_msgs
