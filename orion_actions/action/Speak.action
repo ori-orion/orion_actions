@@ -1,0 +1,7 @@
+# Define the goal
+string sentence
+--- 
+# Define the result
+bool succeeded
+---
+# Define a feedback message
