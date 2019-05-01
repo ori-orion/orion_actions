@@ -80,7 +80,21 @@ add_action_files(
   GetFaceLocation.action
   GetPointedObject.action
   IsDoorOpen.action
+
+  OpenDoor.action
+  OpenFurnitureDoor.action
+  CloseDrawer.action           
   PickUpObject.action
+  CloseFurnitureDoor.action    
+  PointToObject.action
+  PourInto.action
+  PutObjectOnFloor.action
+  GiveObjectToOperator.action  
+  PutObjectOnSurface.action
+  GrabBothBinBags.action       
+  ReceiveObjectFromOperator.action
+  TurnOnBlender.action
+  OpenBinLid.action
 )
 
 ## Generate actions in the 'action' folder
