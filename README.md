@@ -14,6 +14,11 @@ add_action_files(DIRECTORY
 )
 ```
 
+## To do:
+- [ ] Add Listen.action and DetectNoiseDirection.action (speech)
+- [ ] Add Navigation + Semantic mapping + high-level actions
+- [ ] Document the vision actions in the readme
+
 ## Action information
 
 ### Manipulation Actions
