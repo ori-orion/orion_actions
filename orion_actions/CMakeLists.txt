@@ -57,13 +57,6 @@ add_message_files(
   ObjectLocation.msg
 )
 
-## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
-
 ## Generate services in the 'srv' folder
 # add_service_files(
 #   FILES
@@ -97,18 +90,15 @@ add_action_files(
   OpenBinLid.action
 )
 
-## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
+catkin_python_setup()
 
-## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   actionlib_msgs#   geometry_msgs#   std_msgs
-# )
+# Generate added messages and services with any dependencies listed here
+generate_messages(
+   DEPENDENCIES
+   actionlib_msgs
+   geometry_msgs 
+   std_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -130,7 +120,7 @@ add_action_files(
 #   cfg/DynReconf2.cfg
 # )
 
-catkin_python_setup()
+
 
 ###################################
 ## catkin specific configuration ##
