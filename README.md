@@ -6,12 +6,13 @@ Please add all actions, messages and service definitions to this folder. These s
 ## Example of adding actions to the repo
 PickUpObject.action has been added as an example in the 'action' folder. To enable this to be built, you must also modify the CMakeLists.txt file accordingly. You will need to make sure all valid actions are passed into the add\_action\_files function as demonstrated below:
 
-add\_action\_files(DIRECTORY 
+```
+add_action_files(DIRECTORY 
 		action 
 		FILES 
 		PickUpObject.action
 )
-
+```
 
 ## Action information
 
@@ -100,6 +101,7 @@ add\_action\_files(DIRECTORY
 	- feedback: N/A
 	- notes: Takes a tf frame specifying location of the bin and will use point clouds to determine the bin lid handle. The action will lift up the lid. Must use additional actions to move back and place on floor etc.
 
+### Speech Actions
 * Speak.action
 	- input: sentence (**string**)
 	- result: succeeded (**bool**)
