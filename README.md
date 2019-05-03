@@ -100,3 +100,22 @@ add\_action\_files(DIRECTORY
 	- feedback: N/A
 	- notes: Takes a tf frame specifying location of the bin and will use point clouds to determine the bin lid handle. The action will lift up the lid. Must use additional actions to move back and place on floor etc.
 
+* Speak.action
+	- input: sentence (**string**)
+	- result: succeeded (**bool**)
+	- feedback: N/A
+	- notes: Speaks out the sentence given
+
+* SpeakAndListen.action
+	- input: question (**string**), candidates (**string[]**), params (**string[]**), timeout (**float32**),
+	- result: answer (**string**), param (**string**), confidence (**float32**), succeeded (**bool**)
+	- feedback: remaining (**float32**)
+	- notes: Given an array of candiate answers, choose the best guess based on the voice input. Up to one parameter with multiple options could be given as a separate array.
+	
+* HotwordListen.action
+	- input: timeout (**float32**),
+	- result: confidence (**float32**), succeeded (**bool**)
+	- feedback: remaining (**float32**)
+	- notes: Detects a hotword (predefined)
+	
+

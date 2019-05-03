@@ -88,6 +88,10 @@ add_action_files(
   ReceiveObjectFromOperator.action
   TurnOnBlender.action
   OpenBinLid.action
+
+  Speak.action
+  SpeakAndListen.action
+  HotwordListen.action
 )
 
 catkin_python_setup()

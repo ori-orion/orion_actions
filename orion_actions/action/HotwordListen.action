@@ -1,0 +1,11 @@
+# Define the goal
+# timeout < 0 will disable timeout
+float32 timeout
+--- 
+# Define the result
+float32 confidence
+bool succeeded
+---
+# Define a feedback message
+# timeout or failure if remaining < 0
+float32 remaining
