@@ -1,0 +1,7 @@
+# Define a goal
+string object_name
+---
+# Define a result
+bool succeeded
+---
+# Define a feedback message
