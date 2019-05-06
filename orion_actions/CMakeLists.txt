@@ -76,6 +76,7 @@ add_action_files(
 
   OpenDoor.action
   OpenFurnitureDoor.action
+  OpenDrawer.action    
   CloseDrawer.action           
   PickUpObject.action
   CloseFurnitureDoor.action    

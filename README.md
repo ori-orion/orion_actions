@@ -34,6 +34,12 @@ add_action_files(DIRECTORY
 	- feedback: N/A
 	- notes: Will use the goal tf to locate the surface of the door and use point clouds to find the handle
 
+* OpenDrawer.action
+	- input: _goal\_tf_ (**string**)
+	- result: _result_ (**bool**)
+	- feedback: N/A
+	- notes: Will use the goal tf to locate the surface of the door and use point clouds to find the handle
+
 * CloseDrawer.action
 	- input: _goal\_tf_ (**string**)
 	- result: _result_ (**bool**)
@@ -101,10 +107,10 @@ add_action_files(DIRECTORY
 	- notes: Will attempt to use the gripper to push the input button tf frame location
 
 * OpenBinLid.action
-	- input: _bin\_tf\_frame_ (**string**)
+	- input: N/A
 	- result: _result_ (**bool**)
 	- feedback: N/A
-	- notes: Takes a tf frame specifying location of the bin and will use point clouds to determine the bin lid handle. The action will lift up the lid. Must use additional actions to move back and place on floor etc.
+	- notes: Assumes that the robot is in front of a bin and will use point clouds to determine the bin lid handle. The action will lift up the lid. Must use additional actions to move back and place on floor etc.
 
 ### Speech Actions
 * Speak.action
