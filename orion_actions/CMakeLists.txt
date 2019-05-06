@@ -88,6 +88,8 @@ add_action_files(
   ReceiveObjectFromOperator.action
   TurnOnBlender.action
   OpenBinLid.action
+  Navigate.action
+  Follow.action
 
   Speak.action
   SpeakAndListen.action
