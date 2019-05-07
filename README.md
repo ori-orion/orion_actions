@@ -112,6 +112,13 @@ add_action_files(DIRECTORY
 	- feedback: N/A
 	- notes: Assumes that the robot is in front of a bin and will use point clouds to determine the bin lid handle. The action will lift up the lid. Must use additional actions to move back and place on floor etc.
 
+* PlaceObjectRelative.action
+	- input: goal_tf, x, y, z (**string, float32, float32, float32**)
+	- result: _result_ (**bool**)
+	- feedback: N/A
+	- notes: This action will place an object relative to another object seen on tf server. Please ensure that x,y,z are given in standard robot axis convention (base_footprint) i.e x in front, y to left and z up. 
+
+
 ### Speech Actions
 * Speak.action
 	- input: sentence (**string**)

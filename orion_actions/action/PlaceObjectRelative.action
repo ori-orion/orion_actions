@@ -1,0 +1,12 @@
+# Goal 
+string goal_tf
+float32 x
+float32 y
+float32 z
+---
+# Define the result
+bool result
+---
+# Define a feedback message
+
+

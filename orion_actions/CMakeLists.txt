@@ -89,6 +89,8 @@ add_action_files(
   ReceiveObjectFromOperator.action
   TurnOnBlender.action
   OpenBinLid.action
+  PlaceObjectRelative.action
+
   Navigate.action
   Follow.action
 
