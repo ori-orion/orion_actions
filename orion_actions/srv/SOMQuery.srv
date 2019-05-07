@@ -1,10 +1,10 @@
 
-SOMObservation x
-uint32 relation
-SOMObservation y
+SOMObservation obj1
+Relation relation
+SOMObservation obj2
 geometry_msgs/Pose current_robot_pose
 
 
 ---
 
-SOMObject[] objects ### returned object
+Match[] matches

@@ -8,6 +8,7 @@ project(orion_actions)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  message_generation
   actionlib_msgs
   geometry_msgs
   roscpp
@@ -15,6 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   genmsg
   actionlib
+  sensor_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -54,19 +56,28 @@ add_message_files(
   DIRECTORY
   msg
   FILES
-  ObjectLocation.msg
+  PoseEstimate.msg
+  Relation.msg
+  SOMObject.msg
+  SOMObservation.msg
+  SOMROIObject.msg
+  Match.msg
 )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  SOMClearDatabase.srv
+  SOMDelete.srv
+  SOMGetAllObjects.srv
+  SOMLookup.srv
+  SOMObserve.srv
+  SOMQuery.srv
+)
 
 add_action_files(
-  DIRECTORY 
-  action 
+  DIRECTORY
+  action
   FILES
   CheckForBarDrinks.action
   CheckForObject.action
@@ -76,16 +87,16 @@ add_action_files(
 
   OpenDoor.action
   OpenFurnitureDoor.action
-  OpenDrawer.action    
-  CloseDrawer.action           
+  OpenDrawer.action
+  CloseDrawer.action
   PickUpObject.action
-  CloseFurnitureDoor.action    
+  CloseFurnitureDoor.action
   PointToObject.action
   PourInto.action
   PutObjectOnFloor.action
-  GiveObjectToOperator.action  
+  GiveObjectToOperator.action
   PutObjectOnSurface.action
-  GrabBothBinBags.action       
+  GrabBothBinBags.action
   ReceiveObjectFromOperator.action
   TurnOnBlender.action
   OpenBinLid.action
@@ -105,8 +116,9 @@ catkin_python_setup()
 generate_messages(
    DEPENDENCIES
    actionlib_msgs
-   geometry_msgs 
+   geometry_msgs
    std_msgs
+   sensor_msgs
 )
 
 ################################################
