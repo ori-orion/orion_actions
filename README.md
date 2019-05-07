@@ -48,7 +48,7 @@ add_action_files(DIRECTORY
 
 * PickUpObject.action
 	- input: _goal\_tf_ (**string**)
-	- result: _goal_complete_ (**bool**)
+	- result: _result_ (**bool**)
 	- feedback: N/A
 	- notes: Will pick up the object and stay in the grasp pose. Note it will not return to a default pose. A different action must be called.
 
