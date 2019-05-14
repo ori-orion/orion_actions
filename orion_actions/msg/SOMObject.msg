@@ -39,8 +39,12 @@ string name   #### name if person
 
 uint32 age  #### age if person
 
-uint32 posture  #### posture if human using enum
+string posture  #### posture if human using enum
 
-uint32 gender   #### gender if human using enum
+string gender   #### gender if human using enum
 
-uint32 shirt_colour    #### color of shirt using enum
+string shirt_colour    #### color of shirt using enum
+
+string coat_colour
+
+string drink
