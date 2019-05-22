@@ -128,8 +128,8 @@ add_action_files(DIRECTORY
 
 * SpeakAndListen.action
 	- input: question (**string**), candidates (**string[]**), params (**string[]**), timeout (**float32**),
-	- result: answer (**string**), param (**string**), confidence (**float32**), succeeded (**bool**)
-	- feedback: remaining (**float32**)
+	- result: answer (**string**), param (**string**), confidence (**float32**), transcription (**string**), succeeded (**bool**)
+	- feedback: remaining (**float32**), answer (**string**), param (**string**), confidence (**float32**), transcription (**string**)
 	- notes: Given an array of candiate answers, choose the best guess based on the voice input. Up to one parameter with multiple options could be given as a separate array.
 	
 * HotwordListen.action
