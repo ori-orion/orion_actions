@@ -22,5 +22,5 @@ bool succeeded
 float32 remaining
 string answer
 string param
-string transcription
 float32 confidence
+string transcription
