@@ -62,6 +62,12 @@ add_message_files(
   SOMObservation.msg
   SOMROIObject.msg
   Match.msg
+
+  Detection.msg
+  DetectionArray.msg
+  Label.msg
+  ObjectLocation.msg
+  ObjectLocations.msg
 )
 
 ## Generate services in the 'srv' folder
