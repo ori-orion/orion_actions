@@ -3,9 +3,7 @@
 float32 timeout
 --- 
 # Define the result
-float32 confidence
 bool succeeded
+string hotword
 ---
 # Define a feedback message
-# timeout or failure if remaining < 0
-float32 remaining
