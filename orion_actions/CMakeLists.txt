@@ -105,7 +105,6 @@ add_action_files(
   Navigate.action
   Follow.action
 
-  Speak.action
   SpeakAndListen.action
   HotwordListen.action
 )

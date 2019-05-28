@@ -15,7 +15,7 @@ add_action_files(DIRECTORY
 ```
 
 ## To do:
-- [ ] Add Listen.action and DetectNoiseDirection.action (speech)
+- [ ] Add KnockListen.action and DetectNoiseDirection.action (speech)
 - [ ] Add Navigation + Semantic mapping + high-level actions
 - [ ] Document the vision actions in the readme
 
@@ -121,10 +121,23 @@ add_action_files(DIRECTORY
 
 ### Speech Actions
 * Speak.action
-	- input: sentence (**string**)
-	- result: succeeded (**bool**)
-	- feedback: N/A
-	- notes: Speaks out the sentence given
+    - removed since HSR already defines an action server named ``/talk_request_action``. Actions are defined in ``tmc_msgs``. Any speech to the robot could be sent as below:
+    
+    
+    ```
+    from tmc_msgs.msg import TalkRequestAction, TalkRequestGoal, Voice
+    
+    talk_server = SimpleActionClient('talk_request_action', TalkRequestAction)
+    # ...
+    
+    talk_goal = TalkRequestGoal()
+    talk_goal.data.language = Voice.kEnglish
+    talk_goal.data.sentence = text
+    
+    talk_server.send_goal(talk_goal)
+    talk_server.wait_for_result()
+    ```
+	
 
 * SpeakAndListen.action
 	- input: question (**string**), candidates (**string[]**), params (**string[]**), timeout (**float32**),
@@ -134,8 +147,6 @@ add_action_files(DIRECTORY
 	
 * HotwordListen.action
 	- input: timeout (**float32**),
-	- result: confidence (**float32**), succeeded (**bool**)
-	- feedback: remaining (**float32**)
+	- result: succeeded (**bool**), hotword (**string**)
+	- feedback: N/A
 	- notes: Detects a hotword (predefined)
-	
-
