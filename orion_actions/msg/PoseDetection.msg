@@ -35,6 +35,16 @@ float64 RAnkle_x
 float64 RAnkle_y
 float64 Neck_x
 float64 Neck_y
+float64 upLeft_x
+float64 upLeft_y
+float64 bottomRight_x
+float64 bottomRight_y
+float64 R
+float64 G
+float64 B
+string color
+bool waving
+bool sitting
 
 
 

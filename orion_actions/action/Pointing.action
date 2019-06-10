@@ -2,7 +2,7 @@
 # Define the goal
 ---
 # Define the result
-string[] drinks
+PointingArray pointing_array
 bool is_present
 ---
 # Define a feedback message

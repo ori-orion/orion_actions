@@ -118,7 +118,18 @@ add_action_files(DIRECTORY
 	- feedback: N/A
 	- notes: This action will place an object relative to another object seen on tf server. Please ensure that x,y,z are given in standard robot axis convention (base_footprint) i.e x in front, y to left and z up. 
 
+### Vision Actions
+* CheckForBarDrinks.action
+	- input: N/A
+	- result: drinks, is_present(**string[]**, **bool**)
+	- feedback: N/A
+	- notes: This action will return the drink names on the bar. For use please first set the names of drinks, e.g. bottle, and names of the bar, e.g. table in the server file.
 
+* Pointing.action
+	- input: N/A
+	- result: pointing_array, is_present(**PointingArray**, **bool**)
+	- feedback: N/A
+	- notes: This pointing_array message is a list of Pointing message. Each pointing message contains a color to mark which person, and a list of detections of objects that contains all information about the pointed objects.
 ### Speech Actions
 * Speak.action
     - removed since HSR already defines an action server named ``/talk_request_action``. Actions are defined in ``tmc_msgs``. Any speech to the robot could be sent as below:

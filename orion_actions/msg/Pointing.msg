@@ -1,0 +1,2 @@
+Detection[] detections
+string color
