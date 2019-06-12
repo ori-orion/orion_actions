@@ -120,7 +120,7 @@ add_action_files(DIRECTORY
 
 ### Vision Actions
 * CheckForObject.action
-        - input: object_name
+	- input: object_name
 	- result: is_present (**bool**)
 	- feedback: N/A
 	- notes: This action checks whether the object specified by object_name (e.g. potted_plant) is in sight of the robot.
