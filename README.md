@@ -119,6 +119,12 @@ add_action_files(DIRECTORY
 	- notes: This action will place an object relative to another object seen on tf server. Please ensure that x,y,z are given in standard robot axis convention (base_footprint) i.e x in front, y to left and z up. 
 
 ### Vision Actions
+* CheckForObject.action
+        - input: object_name
+	- result: is_present (**bool**)
+	- feedback: N/A
+	- notes: This action checks whether the object specified by object_name (e.g. potted_plant) is in sight of the robot.
+
 * CheckForBarDrinks.action
 	- input: N/A
 	- result: drinks, is_present(**string[]**, **bool**)
