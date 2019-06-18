@@ -65,6 +65,8 @@ add_message_files(
 
   Detection.msg
   DetectionArray.msg
+  FaceDetection.msg
+  FaceDetectionArray.msg
   Label.msg
   ObjectLocation.msg
   ObjectLocations.msg
