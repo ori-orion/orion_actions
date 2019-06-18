@@ -5,3 +5,6 @@ float64 width
 float64 height
 float64 size
 string color
+float64 translation_x
+float64 translation_y
+float64 translation_z
