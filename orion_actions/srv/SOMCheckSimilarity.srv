@@ -1,0 +1,24 @@
+SOMObservation obj1
+SOMObservation obj2
+
+---
+
+# Pairs of object types with lower similarity are more similar
+#
+# Similarity integer represents the average number of levels to a common ancestor of the objects. For example, consider the ontology:
+# -> thing
+#    -> food
+#        -> fruit
+#            -> banana
+#            -> apple
+#        -> cereal
+#    -> drink
+#        -> coke
+#        -> milk
+# (banana, apple) returns 1.0 as both 1 level to common ancestor "fruit"
+# (fruit, coke) returns 2.0 as both 2 levels to common ancester "thing"
+# (banana, banana) returns 0.0
+# (cereal, banana) returns 1.5, the average of "cereal" 1 level from "food" and "banana", two levels from "food"
+
+float32 similarity
+string common_type 	# common type between types. eg. common type of (apple, banana) is fruit
