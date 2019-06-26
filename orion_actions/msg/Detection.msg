@@ -3,7 +3,7 @@ float64 x
 float64 y
 float64 width
 float64 height
-float64 size
+geometry_msgs/Point size
 string color
 float64 translation_x
 float64 translation_y
