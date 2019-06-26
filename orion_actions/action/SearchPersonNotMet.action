@@ -1,0 +1,10 @@
+# Goal
+string[] met_before  	# object ids of people met before	
+string room_name	# room to search
+---
+# Result
+bool success
+string obj_id		# object id of person not met before
+---
+#feedback
+string status		

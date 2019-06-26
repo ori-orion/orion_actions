@@ -102,6 +102,8 @@ add_action_files(
   TurnOnBlender.action
   OpenBinLid.action
   PlaceObjectRelative.action
+  SearchPersonNoDrink.action
+  SearchPersonNotMet.action
 
   Navigate.action
   Follow.action
