@@ -81,6 +81,7 @@ add_service_files(
   SOMLookup.srv
   SOMObserve.srv
   SOMQuery.srv
+  SOMCheckSimilarity.srv
 )
 
 add_action_files(

@@ -32,6 +32,8 @@ uint32 timestamp
 
 geometry_msgs/Pose pose_observation
 
+bool observed #### if an object is not observed the estimate is based only on prior knowledge
+
 
 #### human specific
 
