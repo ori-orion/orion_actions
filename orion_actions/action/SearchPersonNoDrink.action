@@ -1,0 +1,8 @@
+# Goal
+string room_name 		# room to search
+---
+# Result
+bool success
+string obj_id			# object id of person without drink
+---
+string status
