@@ -70,6 +70,10 @@ add_message_files(
   Label.msg
   ObjectLocation.msg
   ObjectLocations.msg
+  Pointing.msg
+  PointingArray.msg
+  PoseDetection.msg
+  PoseDetectionArray.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -119,6 +123,7 @@ add_action_files(
 
   SpeakAndListen.action
   HotwordListen.action
+  Pointing.action
 )
 
 catkin_python_setup()
