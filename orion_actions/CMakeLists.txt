@@ -98,6 +98,7 @@ add_action_files(
   GetFaceLocation.action
   GetPointedObject.action
   IsDoorOpen.action
+  GetClosestObjectName.action
 
   OpenDoor.action
   OpenFurnitureDoor.action

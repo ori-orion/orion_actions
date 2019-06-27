@@ -118,6 +118,13 @@ add_action_files(DIRECTORY
 	- feedback: N/A
 	- notes: This action will place an object relative to another object seen on tf server. Please ensure that x,y,z are given in standard robot axis convention (base_footprint) i.e x in front, y to left and z up. 
 
+* GetClosestObjectName.action
+	- input: N/A
+	- result: _object_ (**string**)
+	- feedback: N/A
+	- notes: This action will get the closest object from the tf server that is not in a list of excluded objects e.g. table
+
+
 ### Vision Actions
 * CheckForObject.action
 	- input: object_name
