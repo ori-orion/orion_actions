@@ -170,7 +170,7 @@ add_action_files(DIRECTORY
 	- notes: Given an array of candiate answers, choose the best guess based on the voice input. Up to one parameter with multiple options could be given as a separate array.
 	
 * HotwordListen.action
-	- input: timeout (**float32**),
+	- input: timeout (**float32**), hotwords (**string[]**)
 	- result: succeeded (**bool**), hotword (**string**)
 	- feedback: N/A
 	- notes: Detects a hotword (predefined)
