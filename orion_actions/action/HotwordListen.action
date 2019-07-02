@@ -1,6 +1,7 @@
 # Define the goal
 # timeout < 0 will disable timeout
-# hotwords have to be chosen from ["bambam", "cancel", "yes_please", "no_thanks", "ready"]. Multiple hotwords can be given.
+# hotwords have to be chosen from ["bambam", "cancel", "ready"]. Multiple hotwords can be given.
+# if nothing is given, all hotword is detectable.
 float32 timeout
 string[] hotwords
 --- 
