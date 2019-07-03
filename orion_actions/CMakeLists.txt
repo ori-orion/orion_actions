@@ -118,6 +118,7 @@ add_action_files(
   PlaceObjectRelative.action
   SearchPersonNoDrink.action
   SearchPersonNotMet.action
+  PickUpBinBag.action
 
   Navigate.action
   Follow.action
