@@ -124,17 +124,6 @@ add_action_files(DIRECTORY
 	- feedback: N/A
 	- notes: This action will get the closest object from the tf server that is not in a list of excluded objects e.g. table
 
-* PickUpBinBag.action
-	- input: N/A
-	- result: _result_ (**bool**)
-	- feedback: N/A
-	- notes: This action will carry out a full picking up of bin bag with option to take the bin lid off
-
-* PutObjectInBin.action
-	- input: N/A
-	- result: _result_ (**bool**)
-	- feedback: N/A
-	- notes: This action will put the object currently hand into the bin in front
 
 ### Vision Actions
 * CheckForObject.action
@@ -185,3 +174,34 @@ add_action_files(DIRECTORY
 	- result: succeeded (**bool**), hotword (**string**)
 	- feedback: N/A
 	- notes: Detects a hotword (predefined)
+
+### Semantic mapping 
+* SOMClearDatabase.srv
+	- input:
+	- returns:
+	- description: deletes all objects from database.
+
+* SOMObserve.srv
+	- input: SOMObservation observation 
+	- returns: bool result, string obj_id 
+	- description: if SOMObservation has empty obj_id, creates new object in semantic map. If obj_id of existing object is supplied updates existing object in semantic map.
+	
+* SOMLookup.srv
+	- input: string obj_id
+	- returns: SOMObject object
+	- description: lookup an object in the semantic map by id
+	
+* SOMGetRoom.srv
+	- input: geometry_msgs/Pose pose
+	- returns: string room_name
+	- description: returns the name of a room given a pose.
+	
+* SOMCheckSimilarity.srv
+	- input: SOMObservation obj1, SOMObservation obj2
+	- returns: float32 similarity, string common_type
+	- description: returns the similarity of two object types. Lower similarity is more similar. Common type is shared parent class. For example, the common type of apple and banana is fruit.
+	
+* SOMQuery.srv
+	- input: SOMObservation obj1, Relation relation, SOMObservation obj2, geometry_msgs/Pose, current_robot_pose
+	- output: Match[] matches
+	- description: returns tuples which match the specification 'obj1 relation to obj2'
