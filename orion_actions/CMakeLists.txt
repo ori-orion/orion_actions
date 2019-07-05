@@ -126,6 +126,7 @@ add_action_files(
   SpeakAndListen.action
   HotwordListen.action
   Pointing.action
+  Memorize.action
 )
 
 catkin_python_setup()
