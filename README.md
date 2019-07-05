@@ -124,6 +124,17 @@ add_action_files(DIRECTORY
 	- feedback: N/A
 	- notes: This action will get the closest object from the tf server that is not in a list of excluded objects e.g. table
 
+* PickUpBinBag.action
+	- input: N/A
+	- result: _result_ (**bool**)
+	- feedback: N/A
+	- notes: This action will carry out a full picking up of bin bag with option to take the bin lid off
+
+* PutObjectInBin.action
+	- input: N/A
+	- result: _result_ (**bool**)
+	- feedback: N/A
+	- notes: This action will put the object currently hand into the bin in front
 
 ### Vision Actions
 * CheckForObject.action
