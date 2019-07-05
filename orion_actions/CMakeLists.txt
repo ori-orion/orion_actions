@@ -99,7 +99,7 @@ add_action_files(
   GetPointedObject.action
   IsDoorOpen.action
   GetClosestObjectName.action
-
+  PutObjectInBin.action
   OpenDoor.action
   OpenFurnitureDoor.action
   OpenDrawer.action
