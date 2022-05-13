@@ -1,49 +1,30 @@
-Header header
+# Did we observe the object in this session or a different one?
+int16 session_num
 
-string obj_id  		#### If this is existing object, fill with existing id, otherwise leave empty to create new object
+string UID
 
-string map_name 	#### the global map that the object belongs. Automatically filled.
+# The class/type of an object. (i.e., table, apple, potted plant).
+string class
 
-string meta_properties 		#### arbitrary string of data
+# Apples are fruit are object. This will give one level up (so apple -> fruit).
+string category
 
-string type 		#### type of the object
+geometry_msgs/Point obj_position
 
-uint32 timestamp 	#### this is the unix timestamp information that holds the time when the object is logged. SOMA2 uses UTC time values.
+bool pickupable
 
-geometry_msgs/Point size  #### approximate size of object
+# Give the pose information necessary for full identification.
+# (For testing purposes, if tf can't be found, this will be set to NAN).
+geometry_msgs/Pose base_pose
+geometry_msgs/Pose head_pose
 
-float32 weight   #### weight in kilograms
+# When did the observation happen?
+timestamp observed_at
 
-string task_role
+# Some indication of the object size. (This will be approximate to begin with).
+geometry_msgs/size size
 
-geometry_msgs/Pose pose_observation 	#### Object pose in 3D
+# Do we expect the object to move?
+bool static
 
-geometry_msgs/Pose robot_pose 	#### The pose of the robot during observation
-
-sensor_msgs/PointCloud2 cloud 	#### The 3D cloud of the object
-
-string colour   #### colour of object
-
-string room_name 
-
-uint32 waypoint #### waypoint associated with this object
-
-geometry_msgs/Polygon room_geometry
-
-
-#### human specific
-
-string name   #### name if person
-
-uint32 age  #### age if person
-
-string posture  #### posture if human
-
-string gender   #### gender if human 
-
-string shirt_colour    #### color of shirt
-
-string coat_colour
-
-string drink
 
