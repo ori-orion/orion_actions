@@ -75,6 +75,8 @@ add_message_files(
   PoseDetection.msg
   PoseDetectionArray.msg
   PoseDetectionPosition.msg
+
+  SpeechText.msg
 )
 
 ## Generate services in the 'srv' folder
