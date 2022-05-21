@@ -4,7 +4,7 @@ int16 session_num
 string UID
 
 # The class/type of an object. (i.e., table, apple, potted plant).
-string class
+string type
 
 # Apples are fruit are object. This will give one level up (so apple -> fruit).
 string category
