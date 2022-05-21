@@ -19,10 +19,10 @@ geometry_msgs/Pose base_pose
 geometry_msgs/Pose head_pose
 
 # When did the observation happen?
-timestamp observed_at
+time observed_at
 
 # Some indication of the object size. (This will be approximate to begin with).
-geometry_msgs/size size
+geometry_msgs/Point size
 
 # Do we expect the object to move?
 bool static
