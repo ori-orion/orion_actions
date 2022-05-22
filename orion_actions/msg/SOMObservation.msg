@@ -1,7 +1,9 @@
 # Did we observe the object in this session or a different one?
-int16 session_num
-
+int16 SESSION_NUM
 string UID
+
+# What batch was this observed in?
+int16 observation_batch_num
 
 # The class/type of an object. (i.e., table, apple, potted plant).
 string type
