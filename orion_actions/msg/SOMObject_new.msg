@@ -2,9 +2,6 @@
 int16 SESSION_NUM
 string UID
 
-# What batch was this observed in?
-int16 observation_batch_num
-
 # The class/type of an object. (i.e., table, apple, potted plant).
 string class_
 string colour
@@ -12,7 +9,7 @@ string colour
 # Apples are fruit are object. This will give one level up (so apple -> fruit).
 string category
 
-geometry_msgs/Point obj_position
+geometry_msgs/Pose obj_position
 
 bool pickupable
 
@@ -22,7 +19,8 @@ geometry_msgs/Pose base_pose
 geometry_msgs/Pose head_pose
 
 # When did the observation happen?
-time observed_at
+time first_observed_at
+time last_observed_at
 
 # Some indication of the object size. (This will be approximate to begin with).
 geometry_msgs/Point size

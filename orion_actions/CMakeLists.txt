@@ -76,6 +76,7 @@ add_message_files(
   PoseDetectionPosition.msg
 
   SOMObservation.msg
+  SOMObject_new.msg
 )
 
 ## Generate services in the 'srv' folder
