@@ -6,7 +6,7 @@ string UID
 int16 observation_batch_num
 
 # Which object is this linked with?
-string OBJ_UID
+string CRSS_REF_UID
 
 # The class/type of an object. (i.e., table, apple, potted plant).
 string class_
