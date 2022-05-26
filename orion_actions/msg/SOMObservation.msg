@@ -5,6 +5,9 @@ string UID
 # What batch was this observed in?
 int16 observation_batch_num
 
+# Which object is this linked with?
+string OBJ_UID
+
 # The class/type of an object. (i.e., table, apple, potted plant).
 string class_
 string colour
