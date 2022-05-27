@@ -92,7 +92,8 @@ add_service_files(
   SOMGetRoom.srv
 
   SOMAddObservation.srv
-  SOMGetObservations.srv
+  SOMQueryObservations.srv
+  SOMQueryObjects.srv
 )
 
 add_action_files(
