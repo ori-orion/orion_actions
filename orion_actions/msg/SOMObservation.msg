@@ -15,7 +15,7 @@ string colour
 # Apples are fruit are object. This will give one level up (so apple -> fruit).
 string category
 
-geometry_msgs/Point obj_position
+geometry_msgs/Pose obj_position
 
 bool pickupable
 

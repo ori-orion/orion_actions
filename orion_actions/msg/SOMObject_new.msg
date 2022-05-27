@@ -9,6 +9,7 @@ string colour
 # Apples are fruit are object. This will give one level up (so apple -> fruit).
 string category
 
+# Note that for cross referencing, this must be of the same type as that within SOMObservation.msg
 geometry_msgs/Pose obj_position
 
 bool pickupable
