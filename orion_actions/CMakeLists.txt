@@ -77,6 +77,7 @@ add_message_files(
 
   SOMObservation.msg
   SOMObject_new.msg
+  Human.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -94,6 +95,8 @@ add_service_files(
   SOMAddObservation.srv
   SOMQueryObservations.srv
   SOMQueryObjects.srv
+  SOMAddHumanObs.srv
+  SOMQueryHumans.srv
 )
 
 add_action_files(
