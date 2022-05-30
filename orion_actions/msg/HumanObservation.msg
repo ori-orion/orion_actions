@@ -7,7 +7,7 @@ float64 height
 
 geometry_msgs/Pose obj_position
 
+
 # When did the observation happen?
-time first_observed_at
-time last_observed_at
+time observed_at
 

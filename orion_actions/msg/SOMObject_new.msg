@@ -14,11 +14,6 @@ geometry_msgs/Pose obj_position
 
 bool pickupable
 
-# Give the pose information necessary for full identification.
-# (For testing purposes, if tf can't be found, this will be set to NAN).
-geometry_msgs/Pose base_pose
-geometry_msgs/Pose head_pose
-
 # When did the observation happen?
 time first_observed_at
 time last_observed_at

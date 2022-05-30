@@ -78,6 +78,7 @@ add_message_files(
   SOMObservation.msg
   SOMObject_new.msg
   Human.msg
+  HumanObservation.msg
 )
 
 ## Generate services in the 'srv' folder
