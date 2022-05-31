@@ -58,7 +58,6 @@ add_message_files(
   FILES
   PoseEstimate.msg
   Relation.msg
-  SOMObject.msg
   SOMROIObject.msg
   Match.msg
 
@@ -76,7 +75,7 @@ add_message_files(
   PoseDetectionPosition.msg
 
   SOMObservation.msg
-  SOMObject_new.msg
+  SOMObject.msg
   Human.msg
   HumanObservation.msg
 )
