@@ -22,7 +22,7 @@ bool pickupable
 # Give the pose information necessary for full identification.
 # (For testing purposes, if tf can't be found, this will be set to NAN).
 geometry_msgs/Pose base_pose
-geometry_msgs/Pose head_pose
+geometry_msgs/Pose camera_pose
 
 # When did the observation happen?
 time observed_at
