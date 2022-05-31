@@ -97,6 +97,7 @@ add_service_files(
   SOMQueryObjects.srv
   SOMAddHumanObs.srv
   SOMQueryHumans.srv
+  SOMRelObjQuery.srv
 )
 
 add_action_files(
