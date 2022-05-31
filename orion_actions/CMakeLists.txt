@@ -90,6 +90,8 @@ add_service_files(
   SOMQuery.srv
   SOMCheckSimilarity.srv
   SOMGetRoom.srv
+
+  
 )
 
 add_action_files(
