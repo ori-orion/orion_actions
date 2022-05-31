@@ -59,6 +59,7 @@ add_message_files(
   PoseEstimate.msg
   Relation.msg
   SOMObject.msg
+  SOMObject_new.msg
   SOMObservation.msg
   SOMROIObject.msg
   Match.msg
