@@ -58,9 +58,12 @@ add_message_files(
   FILES
   PoseEstimate.msg
   Relation.msg
+<<<<<<< HEAD
   SOMObject.msg
   SOMObject_new.msg
   SOMObservation.msg
+=======
+>>>>>>> matthew_munks
   SOMROIObject.msg
   Match.msg
 
@@ -80,6 +83,10 @@ add_message_files(
   PoseDetectionPosition.msg
 
   SpeechText.msg
+  SOMObservation.msg
+  SOMObject.msg
+  Human.msg
+  HumanObservation.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -99,7 +106,12 @@ add_service_files(
   SOMCheckSimilarity.srv
   SOMGetRoom.srv
 
-  
+  SOMAddObservation.srv
+  SOMQueryObservations.srv
+  SOMQueryObjects.srv
+  SOMAddHumanObs.srv
+  SOMQueryHumans.srv
+  SOMRelObjQuery.srv
 )
 
 add_action_files(

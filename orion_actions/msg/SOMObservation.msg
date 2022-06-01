@@ -1,49 +1,36 @@
-Header header
+# Did we observe the object in this session or a different one?
+int16 SESSION_NUM
+string UID
 
-string obj_id  		#### If this is existing object, fill with existing id, otherwise leave empty to create new object
+# What batch was this observed in?
+int16 observation_batch_num
 
-string map_name 	#### the global map that the object belongs. Automatically filled.
+# Which SOM object is this linked with? Links observation to Object
+string CRSS_REF_UID
 
-string meta_properties 		#### arbitrary string of data
+# The class/type of an object. (i.e., table, apple, potted plant).
+string class_
+string colour
 
-string type 		#### type of the object
+# Apples are fruit are object. This will give one level up (so apple -> fruit).
+string category
 
-uint32 timestamp 	#### this is the unix timestamp information that holds the time when the object is logged. SOMA2 uses UTC time values.
+geometry_msgs/Pose obj_position
 
-geometry_msgs/Point size  #### approximate size of object
+bool pickupable
 
-float32 weight   #### weight in kilograms
+# Give the pose information necessary for full identification.
+# (For testing purposes, if tf can't be found, this will be set to NAN).
+geometry_msgs/Pose base_pose
+geometry_msgs/Pose camera_pose
 
-string task_role
+# When did the observation happen?
+time observed_at
 
-geometry_msgs/Pose pose_observation 	#### Object pose in 3D
+# Some indication of the object size. (This will be approximate to begin with).
+geometry_msgs/Point size
 
-geometry_msgs/Pose robot_pose 	#### The pose of the robot during observation
+# Do we expect the object to move?
+bool static
 
-sensor_msgs/PointCloud2 cloud 	#### The 3D cloud of the object
-
-string colour   #### colour of object
-
-string room_name 
-
-uint32 waypoint #### waypoint associated with this object
-
-geometry_msgs/Polygon room_geometry
-
-
-#### human specific
-
-string name   #### name if person
-
-uint32 age  #### age if person
-
-string posture  #### posture if human
-
-string gender   #### gender if human 
-
-string shirt_colour    #### color of shirt
-
-string coat_colour
-
-string drink
 

@@ -176,6 +176,7 @@ add_action_files(DIRECTORY
 	- notes: Detects a hotword (predefined)
 
 ### Semantic mapping 
+ This is no longer functional!!!
 * SOMClearDatabase.srv
 	- input:
 	- returns:
