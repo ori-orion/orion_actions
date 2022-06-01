@@ -5,7 +5,7 @@ string UID
 # What batch was this observed in?
 int16 observation_batch_num
 
-# Which object is this linked with?
+# Which SOM object is this linked with? Links observation to Object
 string CRSS_REF_UID
 
 # The class/type of an object. (i.e., table, apple, potted plant).

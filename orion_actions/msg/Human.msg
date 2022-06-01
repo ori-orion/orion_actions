@@ -11,3 +11,6 @@ geometry_msgs/Pose obj_position
 time first_observed_at
 time last_observed_at
 
+# The corresponding uid for the SOM objects.
+string object_uid
+
