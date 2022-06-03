@@ -2,7 +2,7 @@
 int16 SESSION_NUM
 string UID
 
-# What batch was this observed in?
+# The batch the observation was made in.
 int16 observation_batch_num
 
 # Which SOM object is this linked with? Links observation to Object
