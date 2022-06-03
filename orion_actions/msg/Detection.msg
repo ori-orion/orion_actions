@@ -8,3 +8,4 @@ string color
 float64 translation_x
 float64 translation_y
 float64 translation_z
+float64 confidence
