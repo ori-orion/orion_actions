@@ -151,15 +151,15 @@ add_action_files(DIRECTORY
     ```
     from tmc_msgs.msg import TalkRequestAction, TalkRequestGoal, Voice
     
-    talk_server = SimpleActionClient('talk_request_action', TalkRequestAction)
+    talk_client = SimpleActionClient('talk_request_action', TalkRequestAction)
     # ...
     
     talk_goal = TalkRequestGoal()
     talk_goal.data.language = Voice.kEnglish
     talk_goal.data.sentence = text
     
-    talk_server.send_goal(talk_goal)
-    talk_server.wait_for_result()
+    talk_client.send_goal(talk_goal)
+    talk_client.wait_for_result()
     ```
 	
 
