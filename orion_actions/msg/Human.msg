@@ -2,6 +2,9 @@
 int16 SESSION_NUM
 string UID
 
+# The last observation was made at in the following batch of observations.
+int16 last_observation_batch
+
 string task_role
 float64 height
 
