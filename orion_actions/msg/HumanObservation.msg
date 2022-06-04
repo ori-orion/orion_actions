@@ -19,3 +19,11 @@ string object_uid
 # When did the observation happen?
 time observed_at
 
+# Person Identifiers
+string name
+string gender
+string pronouns
+
+# Facial Recognition
+string face_id
+string[] face_attributes
