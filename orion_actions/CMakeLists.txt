@@ -58,12 +58,6 @@ add_message_files(
   FILES
   PoseEstimate.msg
   Relation.msg
-<<<<<<< HEAD
-  SOMObject.msg
-  SOMObject_new.msg
-  SOMObservation.msg
-=======
->>>>>>> matthew_munks
   SOMROIObject.msg
   Match.msg
 
