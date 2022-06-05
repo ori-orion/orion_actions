@@ -58,8 +58,6 @@ add_message_files(
   FILES
   PoseEstimate.msg
   Relation.msg
-  SOMObject.msg
-  SOMObservation.msg
   SOMROIObject.msg
   Match.msg
 
@@ -67,6 +65,8 @@ add_message_files(
   DetectionArray.msg
   FaceDetection.msg
   FaceDetectionArray.msg
+  Human.msg
+  HumanObservation.msg
   Label.msg
   ObjectLocation.msg
   ObjectLocations.msg
@@ -77,19 +77,35 @@ add_message_files(
   PoseDetectionPosition.msg
 
   SpeechText.msg
+  SOMObservation.msg
+  SOMObject.msg
+  Human.msg
+  HumanObservation.msg
 )
 
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
+  SOMAddObservation.srv
+  SOMAddHumanObs.srv
   SOMClearDatabase.srv
   SOMDelete.srv
   SOMGetAllObjects.srv
   SOMLookup.srv
   SOMObserve.srv
   SOMQuery.srv
+  SOMQueryHumans.srv
+  SOMQueryObjects.srv
+  SOMQueryObservations.srv
   SOMCheckSimilarity.srv
   SOMGetRoom.srv
+
+  SOMAddObservation.srv
+  SOMQueryObservations.srv
+  SOMQueryObjects.srv
+  SOMAddHumanObs.srv
+  SOMQueryHumans.srv
+  SOMRelObjQuery.srv
 )
 
 add_action_files(

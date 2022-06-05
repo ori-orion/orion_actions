@@ -1,52 +1,30 @@
-Header header
+# Did we observe the object in this session or a different one?
+int16 SESSION_NUM
+string UID
 
-string obj_id  		#### id of the object that is inserted. Useful for identifying objects. SOMA2 delete service use this id to delete objects from DB.
+# The class/type of an object. (i.e., table, apple, potted plant).
+string class_
+string colour
 
-string map_name 	#### the global map that the object belongs. Automatically filled.
+# The last observation was made at in the following batch of observations.
+int16 last_observation_batch
 
-string meta_properties 		#### arbitrary string of data
+# Apples are fruit are object. This will give one level up (so apple -> fruit).
+string category
 
-string type 		#### type of the object
+# Note that for cross referencing, this must be of the same type as that within SOMObservation.msg
+geometry_msgs/Pose obj_position
 
-geometry_msgs/Point size  #### approximate size of object
+bool pickupable
 
-float32 weight   #### weight in kilograms
+# When did the observation happen?
+time first_observed_at
+time last_observed_at
 
-string task_role
+# Some indication of the object size. (This will be approximate to begin with).
+geometry_msgs/Point size
 
-PoseEstimate pose_estimate
-
-geometry_msgs/Pose robot_pose 	#### The pose of the robot during observation
-
-sensor_msgs/PointCloud2 cloud 	#### The 3D cloud of the object
-
-string colour   #### colour of object
-
-string room_name
-
-uint32 waypoint #### waypoint associated with this object
-
-geometry_msgs/Polygon room_geometry
-
-uint32 timestamp
-
-geometry_msgs/Pose pose_observation
-
-bool observed #### if an object is not observed the estimate is based only on prior knowledge
+# Do we expect the object to move?
+bool static
 
 
-#### human specific
-
-string name   #### name if person
-
-uint32 age  #### age if person
-
-string posture  #### posture if human using enum
-
-string gender   #### gender if human using enum
-
-string shirt_colour    #### color of shirt using enum
-
-string coat_colour
-
-string drink
