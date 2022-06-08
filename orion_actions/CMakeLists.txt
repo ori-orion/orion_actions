@@ -57,16 +57,12 @@ add_message_files(
   msg
   FILES
   PoseEstimate.msg
-  Relation.msg
   SOMROIObject.msg
-  Match.msg
-
+  
   Detection.msg
   DetectionArray.msg
   FaceDetection.msg
   FaceDetectionArray.msg
-  Human.msg
-  HumanObservation.msg
   Label.msg
   ObjectLocation.msg
   ObjectLocations.msg
@@ -77,11 +73,20 @@ add_message_files(
   PoseDetectionPosition.msg
 
   SpeechText.msg
+)
+
+add_message_files(
+  DIRECTORY
+  msg/som
+  FILES
   SOMObservation.msg
   SOMObject.msg
   Human.msg
   HumanObservation.msg
+  Match.msg
+  Relation.msg
 )
+
 
 ## Generate services in the 'srv' folder
 add_service_files(
