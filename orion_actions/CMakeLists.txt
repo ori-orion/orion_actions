@@ -74,7 +74,6 @@ add_message_files(
 
   SpeechText.msg
 )
-
 add_message_files(
   DIRECTORY
   msg/som
@@ -90,21 +89,20 @@ add_message_files(
 
 ## Generate services in the 'srv' folder
 add_service_files(
-  FILES
-  SOMAddObservation.srv
-  SOMAddHumanObs.srv
+  FILES  
   SOMClearDatabase.srv
   SOMDelete.srv
   SOMGetAllObjects.srv
   SOMLookup.srv
   SOMObserve.srv
   SOMQuery.srv
-  SOMQueryHumans.srv
-  SOMQueryObjects.srv
-  SOMQueryObservations.srv
   SOMCheckSimilarity.srv
   SOMGetRoom.srv
-
+)
+add_service_files(
+  DIRECTORY
+  srv/som
+  FILES
   SOMAddObservation.srv
   SOMQueryObservations.srv
   SOMQueryObjects.srv
@@ -112,6 +110,7 @@ add_service_files(
   SOMQueryHumans.srv
   SOMRelObjQuery.srv
 )
+
 
 add_action_files(
   DIRECTORY
