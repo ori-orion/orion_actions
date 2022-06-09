@@ -84,6 +84,7 @@ add_message_files(
   HumanObservation.msg
   Match.msg
   Relation.msg
+  SOMBoxRegion.msg
 )
 
 
