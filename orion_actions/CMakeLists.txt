@@ -57,7 +57,6 @@ add_message_files(
   msg
   FILES
   PoseEstimate.msg
-  SOMROIObject.msg
   
   Detection.msg
   DetectionArray.msg
