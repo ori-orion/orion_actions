@@ -34,3 +34,5 @@ geometry_msgs/Point size
 bool static
 
 float64[] covariance_mat
+# We're already going to know the transform to get the covariance matrix to diagonal form, so why not use this?
+float64[] transform_cov_to_diagonal
