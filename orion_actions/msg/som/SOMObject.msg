@@ -9,6 +9,8 @@ string colour
 # The last observation was made at in the following batch of observations.
 int16 last_observation_batch
 
+int16 num_observations
+
 # Apples are fruit are object. This will give one level up (so apple -> fruit).
 string category
 
