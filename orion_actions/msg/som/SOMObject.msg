@@ -18,6 +18,7 @@ string category
 geometry_msgs/Pose obj_position
 
 bool pickupable
+bool picked_up
 
 # When did the observation happen?
 time first_observed_at
