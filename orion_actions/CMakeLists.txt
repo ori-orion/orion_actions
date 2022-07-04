@@ -110,6 +110,10 @@ add_service_files(
   SOMAddHumanObs.srv
   SOMQueryHumans.srv
   SOMRelObjQuery.srv
+  
+  SOMRegionQuery.srv
+  SOMAddRegion.srv
+  SOMQueryRegions.srv
 )
 
 
