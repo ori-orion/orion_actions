@@ -104,6 +104,7 @@ add_service_files(
   srv/som
   FILES
   SOMAddObservation.srv
+  SOMAddObject.srv
   SOMQueryObservations.srv
   SOMQueryObjects.srv
   SOMAddHumanObs.srv
