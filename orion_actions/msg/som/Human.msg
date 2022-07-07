@@ -27,4 +27,5 @@ string[] face_attributes
 byte NULL = 0
 byte NOT_SPOKEN_TO = 1
 byte SPOKEN_TO = 2
+byte OPERATOR = 3
 byte spoken_to_state
