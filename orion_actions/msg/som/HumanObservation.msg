@@ -29,7 +29,4 @@ string face_id
 string[] face_attributes
 
 
-byte NULL = 0
-byte NOT_SPOKEN_TO = 1
-byte SPOKEN_TO = 2
-byte spoken_state
+byte spoken_to_state
