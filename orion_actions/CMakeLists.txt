@@ -117,6 +117,7 @@ add_action_files(
   DIRECTORY
   action
   FILES
+  AskPersonName.action
   CheckForBarDrinks.action
   CheckForObject.action
   GetFaceLocation.action
