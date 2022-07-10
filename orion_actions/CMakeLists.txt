@@ -72,6 +72,7 @@ add_message_files(
   PoseDetectionPosition.msg
 
   SpeechText.msg
+  Hotword.msg
 )
 add_message_files(
   DIRECTORY
