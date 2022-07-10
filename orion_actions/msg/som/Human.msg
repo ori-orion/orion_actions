@@ -24,8 +24,8 @@ string name
 string face_id
 string[] face_attributes
 
-byte NULL = 0
-byte NOT_SPOKEN_TO = 1
-byte SPOKEN_TO = 2
-byte OPERATOR = 3
+byte _NULL = 0
+byte _NOT_SPOKEN_TO = 1
+byte _SPOKEN_TO = 2
+byte _OPERATOR = 3
 byte spoken_to_state
