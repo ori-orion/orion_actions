@@ -9,6 +9,8 @@ string colour
 # The last observation was made at in the following batch of observations.
 int16 last_observation_batch
 
+int16 num_observations
+
 # Apples are fruit are object. This will give one level up (so apple -> fruit).
 string category
 
@@ -16,6 +18,7 @@ string category
 geometry_msgs/Pose obj_position
 
 bool pickupable
+bool picked_up
 
 # When did the observation happen?
 time first_observed_at
@@ -27,4 +30,4 @@ geometry_msgs/Point size
 # Do we expect the object to move?
 bool static
 
-
+# float64[] covariance_mat

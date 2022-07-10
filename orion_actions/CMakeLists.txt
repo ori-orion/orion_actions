@@ -57,7 +57,6 @@ add_message_files(
   msg
   FILES
   PoseEstimate.msg
-  SOMROIObject.msg
   
   Detection.msg
   DetectionArray.msg
@@ -85,6 +84,7 @@ add_message_files(
   HumanObservation.msg
   Match.msg
   Relation.msg
+  SOMBoxRegion.msg
 )
 
 
@@ -105,11 +105,16 @@ add_service_files(
   srv/som
   FILES
   SOMAddObservation.srv
+  SOMAddObject.srv
   SOMQueryObservations.srv
   SOMQueryObjects.srv
   SOMAddHumanObs.srv
   SOMQueryHumans.srv
   SOMRelObjQuery.srv
+  
+  SOMRegionQuery.srv
+  SOMAddRegion.srv
+  SOMQueryRegions.srv
 )
 
 
