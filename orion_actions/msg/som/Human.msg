@@ -17,8 +17,10 @@ time last_observed_at
 # The corresponding uid for the SOM objects.
 string object_uid
 
-# Person Name
+# Person Identifiers
 string name
+string gender
+string pronouns
 
 # Facial Recognition
 string face_id

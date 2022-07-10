@@ -72,6 +72,7 @@ add_message_files(
   PoseDetectionPosition.msg
 
   SpeechText.msg
+  Hotword.msg
 )
 add_message_files(
   DIRECTORY
@@ -121,6 +122,7 @@ add_action_files(
   DIRECTORY
   action
   FILES
+  AskPersonName.action
   CheckForBarDrinks.action
   CheckForObject.action
   GetFaceLocation.action
