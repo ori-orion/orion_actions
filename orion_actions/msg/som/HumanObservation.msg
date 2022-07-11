@@ -5,7 +5,7 @@ string UID
 # What batch was this observed in?
 int16 observation_batch_num
 
-# Which SOM object is this linked with? Links human observations to Humans (Needs testing)
+# Which SOM human is this linked with? Links human observations to Humans (Needs testing)
 string CRSS_REF_UID
 
 string task_role
@@ -27,3 +27,6 @@ string pronouns
 # Facial Recognition
 string face_id
 string[] face_attributes
+
+
+byte spoken_to_state

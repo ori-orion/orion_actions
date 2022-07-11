@@ -25,3 +25,9 @@ string pronouns
 # Facial Recognition
 string face_id
 string[] face_attributes
+
+byte _NULL = 0
+byte _NOT_SPOKEN_TO = 1
+byte _SPOKEN_TO = 2
+byte _OPERATOR = 3
+byte spoken_to_state
