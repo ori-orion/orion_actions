@@ -138,6 +138,7 @@ add_action_files(
   CloseFurnitureDoor.action
   PointToObject.action
   PourInto.action
+  MoveHandToTf.action
   PutObjectOnFloor.action
   GiveObjectToOperator.action
   PutObjectOnSurface.action
