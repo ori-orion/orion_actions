@@ -1,5 +1,5 @@
 # Goal 
-string object_tf_frame
+string goal_tf
 ---
 # Define the result
 bool result
