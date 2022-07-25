@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(orion_actions)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
@@ -128,7 +128,6 @@ add_action_files(
   GetFaceLocation.action
   GetPointedObject.action
   IsDoorOpen.action
-  GetClosestObjectName.action
   PutObjectInBin.action
   OpenDoor.action
   OpenFurnitureDoor.action
@@ -142,9 +141,7 @@ add_action_files(
   PutObjectOnFloor.action
   GiveObjectToOperator.action
   PutObjectOnSurface.action
-  GrabBothBinBags.action
   ReceiveObjectFromOperator.action
-  TurnOnBlender.action
   OpenBinLid.action
   PlaceObjectRelative.action
   SearchPersonNoDrink.action
