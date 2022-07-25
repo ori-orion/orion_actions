@@ -88,23 +88,11 @@ add_action_files(DIRECTORY
 	- feedback: N/A
 	- notes: Assumes already in front of a table like surface and will place the object on the surface in front
 
-* GrabBothBinBags.action
-	- input: N/A
-	- result: _result_ (**bool**)
-	- feedback: N/A
-	- notes: Unsure how this will work yet!
-
 * ReceiveObjectFromOperator.action
 	- input: N/A
 	- result: _result_ (**bool**)
 	- feedback: N/A
 	- notes: Hold on the arm directly in front and opens the gripper
-
-* TurnOnBlender.action
-	- input: _button\_tf\_frame_ (**string**)
-	- result: _result_ (**bool**)
-	- feedback: N/A
-	- notes: Will attempt to use the gripper to push the input button tf frame location
 
 * OpenBinLid.action
 	- input: N/A
@@ -117,12 +105,6 @@ add_action_files(DIRECTORY
 	- result: _result_ (**bool**)
 	- feedback: N/A
 	- notes: This action will place an object relative to another object seen on tf server. Please ensure that x,y,z are given in standard robot axis convention (base_footprint) i.e x in front, y to left and z up. 
-
-* GetClosestObjectName.action
-	- input: N/A
-	- result: _object_ (**string**)
-	- feedback: N/A
-	- notes: This action will get the closest object from the tf server that is not in a list of excluded objects e.g. table
 
 
 ### Vision Actions
@@ -175,7 +157,7 @@ add_action_files(DIRECTORY
 	- feedback: N/A
 	- notes: Detects a hotword (predefined)
 
-### Semantic mapping 
+### Semantic mapping
  This is no longer functional!!!
 * SOMClearDatabase.srv
 	- input:
