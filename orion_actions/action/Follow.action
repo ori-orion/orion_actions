@@ -1,5 +1,5 @@
 # Define a goal
-string object_name
+string goal_tf
 ---
 # Define a result
 bool succeeded
