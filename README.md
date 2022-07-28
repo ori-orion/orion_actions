@@ -1,6 +1,8 @@
 # orion_actions
 This repo will contain all of the rosmsgs, actions
 
+This branch "rosplan_tiago" supports Catherine's summer research project (2022) on ROSPlan planner with Tiago, working on MELODIC and Python2.7.
+
 Please add all actions, messages and service definitions to this folder. These should also be documented in the readme.
 
 ## Example of adding actions to the repo
