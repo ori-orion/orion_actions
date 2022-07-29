@@ -87,6 +87,8 @@ add_message_files(
   Relation.msg
   SOMBoxRegion.msg
   Location.msg
+  KnowledgeItem.msg
+  PickPlaceResult.msg
 )
 
 
@@ -117,6 +119,8 @@ add_service_files(
   QueryLocation.srv
   SOMAddKnowledgeItem.srv
   SOMQueryKnowledgeItem.srv
+  SOMQueryPickPlaceResult.srv
+  SOMAddPickPlaceResult.srv
   
   SOMRegionQuery.srv
   SOMAddRegion.srv
@@ -174,7 +178,7 @@ generate_messages(
    geometry_msgs
    std_msgs
    sensor_msgs
-  rosplan_knowledge_msgs
+   rosplan_knowledge_msgs
 
 )
 
