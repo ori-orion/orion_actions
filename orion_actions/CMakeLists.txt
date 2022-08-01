@@ -128,7 +128,6 @@ add_action_files(
   GetFaceLocation.action
   GetPointedObject.action
   IsDoorOpen.action
-  PutObjectInBin.action
   OpenDoor.action
   OpenFurnitureDoor.action
   OpenDrawer.action
