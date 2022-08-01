@@ -1,7 +1,0 @@
-# Check for closest object we can pick up
-# Define the goal
----
-# Define the result
-string object
----
-# Define a feedback message
