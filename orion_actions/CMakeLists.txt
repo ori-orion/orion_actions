@@ -89,6 +89,7 @@ add_message_files(
   Location.msg
   KnowledgeItem.msg
   PickPlaceResult.msg
+  SuccessCount.msg
 )
 
 
@@ -121,6 +122,8 @@ add_service_files(
   SOMQueryKnowledgeItem.srv
   SOMQueryPickPlaceResult.srv
   SOMAddPickPlaceResult.srv
+  SOMAddSuccessCount.srv 
+  SOMQuerySuccessCount.srv
   
   SOMRegionQuery.srv
   SOMAddRegion.srv
