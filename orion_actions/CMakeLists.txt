@@ -90,17 +90,6 @@ add_message_files(
 
 ## Generate services in the 'srv' folder
 add_service_files(
-  FILES  
-  SOMClearDatabase.srv
-  SOMDelete.srv
-  SOMGetAllObjects.srv
-  SOMLookup.srv
-  SOMObserve.srv
-  SOMQuery.srv
-  SOMCheckSimilarity.srv
-  SOMGetRoom.srv
-)
-add_service_files(
   DIRECTORY
   srv/som
   FILES
