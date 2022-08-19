@@ -8,3 +8,4 @@ time timestamp
 # message to log result of action (grasp) and (place) with probability of success 0.8 f.ex. (Bernoulli trial)
 string action_type
 string result
+int16 action_id
