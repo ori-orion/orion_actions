@@ -1,5 +1,5 @@
-# Goal
-
+# Define the goal
+string goal_tf
 ---
 # Define the result
 bool result
