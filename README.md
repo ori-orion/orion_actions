@@ -70,12 +70,6 @@ add_action_files(DIRECTORY
 	- feedback: N/A
 	- notes: Assumes the object with liquid in has already been grasped. The goal tf specifies the container to pour into
 
-* PutObjectOnFloor.action
-	- input: N/A
-	- result: _result_ (**bool**)
-	- feedback: N/A
-	- notes: Will place the object on the floor directly in front. 
-
 * GiveObjectToOperator.action
 	- input: N/A
 	- result: _result_ (**bool**)
