@@ -78,6 +78,7 @@ add_message_files(
   DIRECTORY
   msg/som
   FILES
+  SOMHeader.msg
   SOMObservation.msg
   SOMObject.msg
   Human.msg
