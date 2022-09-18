@@ -1,6 +1,5 @@
-# Required headers.
-int16 SESSION_NUM
-string UID
+# Required header.
+SOMHeader HEADER
 
 geometry_msgs/Transform corner_loc
 geometry_msgs/Vector3 dimension

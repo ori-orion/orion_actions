@@ -1,6 +1,5 @@
-# Required headers.
-int16 SESSION_NUM
-string UID
+# Required header.
+SOMHeader HEADER
 
 # The last observation was made at in the following batch of observations.
 int16 last_observation_batch

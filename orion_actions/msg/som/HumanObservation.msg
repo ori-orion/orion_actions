@@ -1,6 +1,5 @@
-# Required headers.
-int16 SESSION_NUM
-string UID
+# Required header.
+SOMHeader HEADER
 
 # What batch was this observed in?
 int16 observation_batch_num

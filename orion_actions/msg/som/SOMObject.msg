@@ -1,6 +1,5 @@
-# Did we observe the object in this session or a different one?
-int16 SESSION_NUM
-string UID
+# Required header.
+SOMHeader HEADER
 
 # The class/type of an object. (i.e., table, apple, potted plant).
 string class_
