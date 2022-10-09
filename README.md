@@ -23,88 +23,86 @@ add_action_files(DIRECTORY
 
 ### Manipulation Actions
 * OpenDoor.action
-	- input: N/A
-	- result: _result_ (**bool**)
+	- input: _goal\_tf_ (**string**) indicating where the door is (provisional)
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
-	- notes: Expects to be called when in front of the door and will use point clouds to find handle and open
+	- notes: Will use the goal tf to locate the surface of the door and use point clouds to find the handle
 
 * OpenFurnitureDoor.action
-	- input: _goal\_tf_ (**string**)
-	- result: _result_ (**bool**)
+	- input: _goal\_tf_ (**string**) indicating where the door is (provisional)
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
 	- notes: Will use the goal tf to locate the surface of the door and use point clouds to find the handle
 
 * OpenDrawer.action
-	- input: _goal\_tf_ (**string**)
-	- result: _result_ (**bool**)
+	- input: _goal\_tf_ (**string**) indicating where the drawer is (provisional)
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
-	- notes: Will use the goal tf to locate the surface of the door and use point clouds to find the handle
+	- notes: Will use the goal tf to locate the surface of the drawer and use point clouds to find the handle
 
 * CloseDrawer.action
-	- input: _goal\_tf_ (**string**)
-	- result: _result_ (**bool**)
+	- input: _goal\_tf_ (**string**) indicating where the drawer is (provisional)
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
-	- notes: Will use the goal tf to locate the surface of the door and use point clouds to find the handle
+	- notes: Will use the goal tf to locate the surface of the drawer and use point clouds to find the handle
 
 * PickUpObject.action
-	- input: _goal\_tf_ (**string**)
-	- result: _result_ (**bool**)
+	- input: _goal\_tf_ (**string**) specifying the object to be picked up. Should be as close as possible to the object.
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
-	- notes: Will pick up the object and stay in the grasp pose. Note it will not return to a default pose. A different action must be called.
+	- notes: Will pick up the object and attempt to return to its original pose.
 
 * CloseFurnitureDoor.action
-	- input: _goal\_tf_ (**string**)
-	- result: _result_ (**bool**)
+	- input: _goal\_tf_ (**string**) indicating where the door is (provisional)
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
 	- notes: Will use the goal tf to locate the surface of the door and use point clouds to find the handle
 
 * PointToObject.action
-	- input: _object\_tf\_frame_ (**string**)
-	- result: _result_ (**bool**)
+	- input: _object\_tf_ (**string**) to point towards
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
 	- notes: Will use the object tf frame to determine 3D position to point to
 
 * PourInto.action
-	- input: _goal\_tf\_frame_ (**string**)
-	- result: _result_ (**bool**)
+	- input: _goal\_tf_ (**string**) to pour into
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
-	- notes: Assumes the object with liquid in has already been grasped. The goal tf specifies the container to pour into
+	- notes: Assumes the object with liquid in has already been grasped. The goal tf specifies the container to pour into. Do not test with real liquid...
 
-* PutObjectOnFloor.action
-	- input: N/A
-	- result: _result_ (**bool**)
-	- feedback: N/A
-	- notes: Will place the object on the floor directly in front. 
+* PutObjectOnSurface.action
+  - input:
+    - _goal\_tf_ (**string**) on top of the surface, to put the object at
+    - _abandon\_action\_if\_no\_plane\_found_ (**bool**): Whether to give up if a plane to place on cannot be detected. If false, when a plane is not detected the action will place the object at goal_tf itself.
+    - _drop\_object\_by\_metres_ (**float32**): How far above the surface to "drop" the object. It makes sense to drop bin bags a bit above the floor, for example. It makes less sense to drop fragile objects so this should be 0.0 by default. Negative values *shouldn't* result in the robot placing the item through solid surfaces, but don't try it anyway.
+    - _check\_weight\_grams_ (**float32**): The robot will check that a weight change of check_weight_grams grams has occured after placing the object, e.g. to detect whether the object is somehow caught on the gripper. If detected_weight_change < check_weight_grams, the robot will wiggle the gripper to try to drop the object. Weight checking is not precise, so give the smallest practical weight change for the object being placed. If <=0, no weight checking will be carried out.
+  - result: _result_ (**bool**) indicating whether the action succeeded
+  - feedback: N/A
+  - notes: _goal\_tf_ should be oriented so that z points upwards from the surface: this specifies that the object should be placed on a horizontal surface.
 
 * GiveObjectToOperator.action
 	- input: N/A
-	- result: _result_ (**bool**)
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
 	- notes: Will present object in front of the HSR 
 
-* PutObjectOnSurface.action
-	- input: N/A
-	- result: _result_ (**bool**)
-	- feedback: N/A
-	- notes: Assumes already in front of a table like surface and will place the object on the surface in front
-
 * ReceiveObjectFromOperator.action
 	- input: N/A
-	- result: _result_ (**bool**)
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
 	- notes: Hold on the arm directly in front and opens the gripper
 
 * OpenBinLid.action
-	- input: N/A
-	- result: _result_ (**bool**)
+	- input: _goal\_tf_ (**string**) indicating where the lid is (provisional)
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
 	- notes: Assumes that the robot is in front of a bin and will use point clouds to determine the bin lid handle. The action will lift up the lid. Must use additional actions to move back and place on floor etc.
 
 * PlaceObjectRelative.action
-	- input: goal_tf, x, y, z (**string, float32, float32, float32**)
-	- result: _result_ (**bool**)
+	- input: goal_tf, x, y, z (**string**, **float32**, **float32**, **float32**)
+	- result: _result_ (**bool**) indicating whether the action succeeded
 	- feedback: N/A
-	- notes: This action will place an object relative to another object seen on tf server. Please ensure that x,y,z are given in standard robot axis convention (base_footprint) i.e x in front, y to left and z up. 
+	- notes: This action will place an object relative to a tf (e.g. another object seen and published by perception). Please ensure that x,y,z are given in standard robot axis convention (base_footprint) i.e x in front, y to left and z up. 
 
 
 ### Vision Actions

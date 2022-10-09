@@ -127,7 +127,6 @@ add_action_files(
   PointToObject.action
   PourInto.action
   MoveHandToTf.action
-  PutObjectOnFloor.action
   GiveObjectToOperator.action
   PutObjectOnSurface.action
   ReceiveObjectFromOperator.action
