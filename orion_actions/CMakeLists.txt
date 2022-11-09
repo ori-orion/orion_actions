@@ -78,6 +78,7 @@ add_message_files(
   DIRECTORY
   msg/som
   FILES
+  SOMHeader.msg
   SOMObservation.msg
   SOMObject.msg
   Human.msg
@@ -94,6 +95,7 @@ add_service_files(
   srv/som
   FILES
   SOMAddObservation.srv
+  SOMAddObservationArr.srv
   SOMAddObject.srv
   SOMQueryObservations.srv
   SOMQueryObjects.srv

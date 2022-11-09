@@ -1,6 +1,5 @@
-# Did we observe the object in this session or a different one?
-int16 SESSION_NUM
-string UID
+# Required header.
+SOMHeader HEADER
 
 # The batch the observation was made in.
 int16 observation_batch_num

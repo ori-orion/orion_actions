@@ -1,5 +1,9 @@
 # Define the goal
 string goal_tf
+
+# Defines what the robot says before pointing happens, and once pointing has happened.
+string statement_before_pointing
+string statement_having_pointed
 ---
 # Define the result
 bool result
