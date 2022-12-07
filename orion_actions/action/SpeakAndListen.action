@@ -7,6 +7,7 @@ string question
 string[] candidates
 string[] params
 float32 timeout
+float32 confidence_threshold
 --- 
 # Define the result
 # Answer is the sentence with <param> replaced by the most likely parameter (if any)
