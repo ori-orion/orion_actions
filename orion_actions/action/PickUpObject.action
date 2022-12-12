@@ -1,5 +1,8 @@
 # Define the goal
-string goal_tf 
+string goal_tf
+float32[] approach_axis
+float32 extend_distance
+bool is_bin_bag
 ---
 # Define the result
 bool result
