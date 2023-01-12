@@ -3,6 +3,7 @@
 
 geometry_msgs/Point navigating_within_reach_of
 float64 distance_from_obj
+geometry_msgs/Point current_pose
 
 ---
 
