@@ -7,4 +7,4 @@ geometry_msgs/Point current_pose
 
 ---
 
-geometry_msgs/Point navigate_to
+geometry_msgs/Pose navigate_to
