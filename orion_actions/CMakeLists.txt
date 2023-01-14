@@ -107,6 +107,12 @@ add_service_files(
   SOMAddRegion.srv
   SOMQueryRegions.srv
 )
+add_service_files(
+  DIRECTORY
+  srv/task_level_planning
+  FILES
+  NavigationalQuery.srv
+)
 
 
 add_action_files(
