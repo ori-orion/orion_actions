@@ -108,6 +108,7 @@ add_service_files(
   SOMQueryRegions.srv
 
   SOMSimilarityQuery.srv
+
 )
 add_service_files(
   DIRECTORY
