@@ -108,6 +108,13 @@ add_service_files(
   SOMQueryRegions.srv
 
   SOMSimilarityQuery.srv
+
+)
+add_service_files(
+  DIRECTORY
+  srv/task_level_planning
+  FILES
+  NavigationalQuery.srv
 )
 
 

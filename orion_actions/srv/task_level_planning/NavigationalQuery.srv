@@ -1,0 +1,10 @@
+# Currently internal to Task level planning.
+# This service communicates between the python state machine and the c++ pcl bit.
+
+geometry_msgs/Point navigating_within_reach_of
+float64 distance_from_obj
+geometry_msgs/Point current_pose
+
+---
+
+geometry_msgs/Pose navigate_to
