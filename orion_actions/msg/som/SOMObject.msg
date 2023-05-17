@@ -16,6 +16,7 @@ string category
 # Note that for cross referencing, this must be of the same type as that within SOMObservation.msg
 geometry_msgs/Pose obj_position
 
+# Information as to whether we expect the robot to be able to pick things up, and whether they have been picked up.
 bool pickupable
 bool picked_up
 
@@ -28,5 +29,9 @@ geometry_msgs/Point size
 
 # Do we expect the object to move?
 bool static
+
+# The name of the tf that's being published.
+# This is then what manipulation should be fed when looking at picking up an object.
+string tf_name
 
 # float64[] covariance_mat
