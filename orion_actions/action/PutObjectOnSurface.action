@@ -9,6 +9,11 @@ float32 check_weight_grams
 ---
 # Define the result
 bool result
+byte failure_mode
+byte SUCCESS=0
+byte TF_NOT_FOUND=1
+byte PLACING_EXCEPTION=2
+byte PLACING_FAILED=3
 ---
 # Define a feedback message
 
