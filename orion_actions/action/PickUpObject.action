@@ -7,6 +7,10 @@ bool is_bin_bag
 # Define the result
 bool result
 byte failure_mode
+byte SUCCESS=0
+byte TF_NOT_FOUND=1
+byte TF_TIMEOUT=2
+byte GRASPING_FAILED=3
 ---
 # Define a feedback message
 
