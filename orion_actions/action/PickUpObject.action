@@ -6,6 +6,7 @@ bool is_bin_bag
 ---
 # Define the result
 bool result
+byte failure_mode
 ---
 # Define a feedback message
 
