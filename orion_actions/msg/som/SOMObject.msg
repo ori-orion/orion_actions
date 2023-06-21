@@ -4,6 +4,7 @@ SOMHeader HEADER
 # The class/type of an object. (i.e., table, apple, potted plant).
 string class_
 string colour
+string tf_name
 
 # The last observation was made at in the following batch of observations.
 int16 last_observation_batch
