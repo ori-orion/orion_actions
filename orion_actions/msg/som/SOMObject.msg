@@ -28,6 +28,6 @@ time last_observed_at
 geometry_msgs/Point size
 
 # Do we expect the object to move?
-bool static
+bool is_static
 
 # float64[] covariance_mat

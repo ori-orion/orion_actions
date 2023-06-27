@@ -31,7 +31,7 @@ time observed_at
 geometry_msgs/Point size
 
 # Do we expect the object to move?
-bool static
+bool is_static
 
 float64[] covariance_mat
 # We're already going to know the transform to get the covariance matrix to diagonal form, so why not use this?
