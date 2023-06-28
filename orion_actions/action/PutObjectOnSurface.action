@@ -9,6 +9,9 @@ float32 check_weight_grams
 
 # If 0, then we will default to 0.1. 
 float32 object_half_height
+
+# tf_name for the hard-coded shelf
+string shelf_tf_ref
 ---
 # Define the result
 bool result
