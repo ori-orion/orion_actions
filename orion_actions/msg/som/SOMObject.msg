@@ -25,9 +25,11 @@ time first_observed_at
 time last_observed_at
 
 # Some indication of the object size. (This will be approximate to begin with).
+# NOTE: Conventions are as follows: 
+# x: width, y: depth, z: height
 geometry_msgs/Point size
 
 # Do we expect the object to move?
-bool static
+bool is_static
 
 # float64[] covariance_mat

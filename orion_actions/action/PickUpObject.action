@@ -3,6 +3,10 @@ string goal_tf
 float32[] approach_axis
 float32 extend_distance
 bool is_bin_bag
+
+# This will toggle looking into SOM, working out the global pose, and then using that tf.
+# False by default for back compatibility.
+bool publish_own_tf
 ---
 # Define the result
 bool result
